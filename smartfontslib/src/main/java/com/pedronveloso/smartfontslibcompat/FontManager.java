@@ -1,4 +1,4 @@
-package fr.arnaudguyon.smartfontslib;
+package com.pedronveloso.smartfontslibcompat;
 
 /*
     Copyright 2016 Arnaud Guyon
@@ -89,8 +89,8 @@ public class FontManager {
     public void applyFont(@NonNull TextView textView, @Nullable AttributeSet attrs) {
         if (attrs != null) {
             Context context = textView.getContext();
-            TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.TextView, 0, 0);
-            String fontPath = styledAttributes.getString(R.styleable.TextView_font);
+            TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(attrs, fr.arnaudguyon.smartfontslib.R.styleable.TextView, 0, 0);
+            String fontPath = styledAttributes.getString(fr.arnaudguyon.smartfontslib.R.styleable.TextView_font);
             if (!TextUtils.isEmpty(fontPath)) {
                 Typeface typeface = getTypeface(context, fontPath);
                 if (typeface != null) {

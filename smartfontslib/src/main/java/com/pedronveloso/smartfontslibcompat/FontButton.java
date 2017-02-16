@@ -1,4 +1,4 @@
-package fr.arnaudguyon.smartfontslib;
+package com.pedronveloso.smartfontslibcompat;
 
 /*
     Copyright 2016 Arnaud Guyon
@@ -17,21 +17,20 @@ package fr.arnaudguyon.smartfontslib;
  */
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.RadioButton;
 
 /**
- * RadioButton which can use a custom font with the "font" attribute
+ * Button which can use a custom font with the "font" attribute
  */
 
-public class FontRadioButton extends RadioButton {
-
-    public FontRadioButton(Context context, AttributeSet attrs) {
+public class FontButton extends AppCompatButton {
+    public FontButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         FontManager.getInstance().applyFont(this, attrs);
     }
 
-    public FontRadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
+    public FontButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         FontManager.getInstance().applyFont(this, attrs);
     }

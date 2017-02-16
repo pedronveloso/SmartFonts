@@ -1,4 +1,4 @@
-package fr.arnaudguyon.smartfontslib;
+package com.pedronveloso.smartfontslibcompat;
 
 /*
     Copyright 2016 Arnaud Guyon
@@ -17,14 +17,14 @@ package fr.arnaudguyon.smartfontslib;
  */
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
-import android.widget.CheckBox;
 
 /**
  * CheckBox which can use a custom font with the "font" attribute
  */
 
-public class FontCheckBox extends CheckBox {
+public class FontCheckBox extends AppCompatCheckBox {
 
     public FontCheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);

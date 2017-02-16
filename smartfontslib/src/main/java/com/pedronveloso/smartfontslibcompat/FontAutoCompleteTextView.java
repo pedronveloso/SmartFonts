@@ -1,4 +1,4 @@
-package fr.arnaudguyon.smartfontslib;
+package com.pedronveloso.smartfontslibcompat;
 
 /*
     Copyright 2016 Arnaud Guyon
@@ -17,22 +17,22 @@ package fr.arnaudguyon.smartfontslib;
  */
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatAutoCompleteTextView;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 /**
- * TextView which can use a custom font with the "font" attribute
+ * AutoCompleteTextView which can use a custom font with the "font" attribute
  */
 
-public class FontTextView extends TextView {
+public class FontAutoCompleteTextView extends AppCompatAutoCompleteTextView {
 
-    public FontTextView(Context context, AttributeSet attrs) {
+    public FontAutoCompleteTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        FontManager.getInstance().applyFont(this, attrs);   // add this call
+        FontManager.getInstance().applyFont(this, attrs);
     }
 
-    public FontTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public FontAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        FontManager.getInstance().applyFont(this, attrs);   // add this call
+        FontManager.getInstance().applyFont(this, attrs);
     }
 }

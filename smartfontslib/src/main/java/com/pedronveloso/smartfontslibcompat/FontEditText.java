@@ -1,4 +1,4 @@
-package fr.arnaudguyon.smartfontslib;
+package com.pedronveloso.smartfontslibcompat;
 
 /*
     Copyright 2016 Arnaud Guyon
@@ -17,14 +17,14 @@ package fr.arnaudguyon.smartfontslib;
  */
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
-import android.widget.EditText;
 
 /**
  * EditText which can use a custom font with the "font" attribute
  */
 
-public class FontEditText extends EditText {
+public class FontEditText extends AppCompatEditText {
 
     public FontEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
