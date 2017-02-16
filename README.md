@@ -130,17 +130,19 @@ allprojects {
 }
 ```
 
-Add the libary dependency to your **APP** build.gradle file
+Add the library dependency to your **APP** build.gradle file
 
 ```
 dependencies {
-    compile 'com.github.smart-fun:SmartFonts:1.0.2'    // add this line
+    compile 'com.github.pedronveloso:SmartFonts:1.0.3'    // add this line
 }
 ```
 
 ## Library License
 
 Copyright 2016 Arnaud Guyon
+
+Contributors: Pedro Veloso
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
