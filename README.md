@@ -80,7 +80,7 @@ To use the custom fonts in your style, simply add the "font" attribute.
 Then use it everywhere, no more need to define the "font" attribute directly.
 
 ```xml
-<fr.arnaudguyon.smartfontslib.FontTextView
+<com.pedronveloso.smartfontslibcompat.FontTextView
     style="@style/MyTitleStyle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
