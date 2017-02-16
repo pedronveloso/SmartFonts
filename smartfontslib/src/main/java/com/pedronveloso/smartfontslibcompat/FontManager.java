@@ -89,8 +89,8 @@ public class FontManager {
     public void applyFont(@NonNull TextView textView, @Nullable AttributeSet attrs) {
         if (attrs != null) {
             Context context = textView.getContext();
-            TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(attrs, fr.arnaudguyon.smartfontslib.R.styleable.TextView, 0, 0);
-            String fontPath = styledAttributes.getString(fr.arnaudguyon.smartfontslib.R.styleable.TextView_font);
+            TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(attrs, com.pedronveloso.smartfontslibcompat.R.styleable.TextView, 0, 0);
+            String fontPath = styledAttributes.getString(com.pedronveloso.smartfontslibcompat.R.styleable.TextView_font);
             if (!TextUtils.isEmpty(fontPath)) {
                 Typeface typeface = getTypeface(context, fontPath);
                 if (typeface != null) {
